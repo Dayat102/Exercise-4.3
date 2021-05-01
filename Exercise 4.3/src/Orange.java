@@ -12,7 +12,7 @@ public class Orange extends Fruits {
 		this.amount=sc.nextDouble();
 	    this.price= this.amount*0.70;
 	}
-	private void discount() {
+	public void discount(int amount) {
 		// TODO Auto-generated method stub
 		System.out.println("We provide special promotions if you buy fruit in that amount:- ");
 		System.out.println("50 Orange - 70 = 0.50 per fruits ");
@@ -53,7 +53,7 @@ public class Orange extends Fruits {
 		} while (ans!= 'Y'|| ans != 'N');
 	}
 
-	private void Tendered() {
+	public void Tendered() {
 		// TODO Auto-generated method stub
 
 		 System.out.println("You bought:");

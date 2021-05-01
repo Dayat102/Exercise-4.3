@@ -12,7 +12,7 @@ public class Apple extends Fruits {
 		this.amount=sc.nextDouble();
 	    this.price= this.amount*0.70;
 	}
-	private void discount() {
+	private void discount(int amount) {
 		// TODO Auto-generated method stub
 		System.out.println("We provide special promotions if you buy fruit in that amount:- ");
 		System.out.println("50 Apple - 70 = 0.50 per fruits ");
