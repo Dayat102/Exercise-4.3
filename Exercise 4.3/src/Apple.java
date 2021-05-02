@@ -14,7 +14,6 @@ public class Apple extends Fruits {
 	}
 	private void discount(int amount) {
 		// TODO Auto-generated method stub
-		System.out.println("We provide special promotions if you buy fruit in that amount:- ");
 		System.out.println("50 Apple - 70 = 0.50 per fruits ");
 		System.out.println("71 Apple - 90 = 0.45 per fruits ");
 		System.out.println("More than 90 = 0.40 per fruits ");

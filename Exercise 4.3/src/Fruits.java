@@ -6,4 +6,7 @@ public class Fruits {
 		this.name = name;
 	    System.out.println("Fruit constructor is invoked");
 	  }
+	public String discount() {
+		return("We provide special promotions if you buy fruit in that amount:- ");
+	}
 }

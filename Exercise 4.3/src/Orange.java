@@ -12,9 +12,8 @@ public class Orange extends Fruits {
 		this.amount=sc.nextDouble();
 	    this.price= this.amount*0.70;
 	}
-	public void discount(int amount) {
+	public double discount(double amount) {
 		// TODO Auto-generated method stub
-		System.out.println("We provide special promotions if you buy fruit in that amount:- ");
 		System.out.println("50 Orange - 70 = 0.50 per fruits ");
 		System.out.println("71 Orange - 90 = 0.45 per fruits ");
 		System.out.println("More than 90 = 0.40 per fruits ");
@@ -51,9 +50,10 @@ public class Orange extends Fruits {
 			System.out.println("Do you want to increase the amount of fruit to buy? (Y/N) ");
 			this.ans=sc.next().charAt(0);	
 		} while (ans!= 'Y'|| ans != 'N');
+		return this.discount;
 	}
 
-	public void Tendered() {
+	public double Tendered() {
 		// TODO Auto-generated method stub
 
 		 System.out.println("You bought:");
@@ -80,27 +80,6 @@ public class Orange extends Fruits {
 	           System.out.println("*****************");
 	           System.out.println("$$$$$$$$$$--THANK YOU. PLEASE COME AGAIN--$$$$$$$$$");
 	        }
-	}
-
-	public Double getAmount() {
-		return amount;
-	}
-	public Double getPrice() {
-		return price;
-	}
-	public Double getDiscount() {
-		return discount;
-	}
-	public char getAns() {
-		return ans;
-	}
-	public Double getB() {
-		return b;
-	}
-	public Double getTendered() {
-		return tendered;
-	}
-	public Double getBalance() {
-		return balance;
+	     return this.tendered;
 	}
 }
