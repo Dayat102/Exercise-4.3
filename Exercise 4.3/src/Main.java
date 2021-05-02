@@ -1,11 +1,10 @@
-
-public class Main {
-
-	public static void main(String[] args) {
-		Orange a=new Orange("Orange");
-		System.out.println(a);
+import java.util.Scanner;
+public class Main{
+	
+	public static void main(String[]args) {
+		System.out.println();
 		
-		Apple b=new Apple("Apple");
-		System.out.println(b);
+		Apple a=new Apple ("Apple",101,2.99); //new object for sub class
+		GreenApple g= new GreenApple("Green Apple",50,0.98,null,true);
 	}
 }
